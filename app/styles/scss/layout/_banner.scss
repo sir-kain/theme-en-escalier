@@ -28,7 +28,9 @@
   //   z-index: -150;
   // }
   .top_header {
-    float: right;
+    position: fixed;
+    right: 0;
+    // float: right;
     nav .flag {
       float: right;
       // margin-top: 1.3em;
