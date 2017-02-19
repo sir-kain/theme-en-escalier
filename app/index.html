@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
+  <!-- la largeur du document egal a celle de l'ecran du peripherique utilisé
+        le zoom egal à 100% zoom par défaut du peripherique -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | themeEscalier</title>
+  <title>Theme en Escalier</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/bower_components/swiper/dist/css/swiper.css" />
   <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.css" />
   <!-- endbower -->
   <!-- endbuild -->
@@ -31,7 +34,7 @@
   </div>-->
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <![endif]-->
   <!-- Banner -->
   <section class="banner clearfix">
     <!--<div class="overlay"></div>-->
@@ -40,7 +43,7 @@
     </video>-->
     <header class="top_header clearfix">
       <nav>
-        <!--<a href="https://vimeo.com/175305044" class="popup" data-lity>Watch Full Video</a>-->
+        <!--<a href="https://vimeo.com/175344" class="popup" data-lity>Watch Full Video</a>-->
         <div class="flag bounce">
           <svg class="flag-top">
             <line x1="65" y1="0" x2="65" y2="65" /> Sorry, your browser does not support inline SVG.
@@ -103,56 +106,54 @@
         </div>
       </nav>
     </header>
-    <!--<header class="top_header_1">-->
-    <!--<div class="ui secondary pointing fixed menu">
-      <a class="item">Home </a>
-      <a class="item">Messages </a>
-      <a class="item">Friends </a>
-      <div class="right menu">
-        <a class="ui item active">Logout </a>
-      </div>
-    </div>-->
-    <!--</header>-->
-    <div class="ui fixed borderless menu" style="margin-top: -0.1em;">
+    <!--<div class="ui fixed borderless menu" style="margin-top: -0.1em;">
       <div class="header item">Our Logo Company </div>
       <div class="right menu">
         <a class="item active"> Services </a>
         <a class="item">Produits </a>
         <a class="item">About Us </a>
       </div>
-    </div>
+    </div>-->
   </section>
   <!-- END Banner -->
-  <section class="services">
-    <div class="intro clearfix">
-      <div class="wrapper">
-        <h1>
-          Nos Services<br>
-          <!--<img src="images/service.jpg" alt="Tinder Social" title="Tinder Social">-->
-        </h1>
-        <p>Nous sommes très actif dans le milieu de l'informatique</p>
-      </div>
+  <section>
+    <div class="line" style="margin-bottom: -5px;">
+      <svg height="50" width="100%" style="background-color: transparent;">
+        <polygon points="0 0,1290 0, 0 50" style="fill:transparent;" />
+        <line x1="0" y1="50" x2="100%" y2="0" style="stroke:#000;stroke-width:2" />
+        <polygon points="0 50, 1290 1290, 1290 0" style="fill:#fff;" />
+      </svg>
     </div>
-    <div class="ui four column grid container">
-      <!--<div class="column"></div>-->
-      <div class="column">
-        <div class="ui segment">ok ok ko ldfj </div>
-      </div>
-      <div class="column">
-        <div class="ui segment">ok ok ko ldfj </div>
-      </div>
-      <div class="column">
-        <div class="ui segment">ok ok ko ldfj </div>
-      </div>
-      <div class="column">
-        <div class="ui segment">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde illum voluptates aspernatur, iusto esse perspiciatis. Sit,
-          ipsa perspiciatis veniam ratione tempora assumenda! Perferendis illum atque sequi, quam ipsam minus.
-        </div>
-      </div>
-      <!--<div class="column"></div>-->
+    <section class="products"></section>
+    <div class="line">
+      <svg height="50" width="100%" style="background-color: transparent;">
+        <polygon points="0 0,1290 0, 0 50" style="fill:#fff;" />
+        <line x1="0" y1="50" x2="100%" y2="0" style="stroke:#000;stroke-width:2" />
+        <polygon points="0 50, 1290 1290, 1290 0" style="fill:transparent;" />
+      </svg>
     </div>
   </section>
+  <section>
+    <section class="services"></section>
+  </section>
+  <section>
+    <div class="line" style="margin-bottom: -5px;">
+      <svg height="50" width="100%" style="background-color: transparent;">
+        <polygon points="0 0,1290 0, 0 50" style="fill:transparent;" />
+        <line x1="0" y1="50" x2="100%" y2="0" style="stroke:#000;stroke-width:2" />
+        <polygon points="0 50, 1290 1290, 1290 0" style="fill:#fff;" />
+      </svg>
+    </div>
+    <section class="products"></section>
+    <div class="line">
+      <svg height="50" width="100%" style="background-color: transparent;">
+        <polygon points="0 0,1290 0, 0 50" style="fill:#fff;" />
+        <line x1="0" y1="50" x2="100%" y2="0" style="stroke:#000;stroke-width:2" />
+        <polygon points="0 50, 1290 1290, 1290 0" style="fill:transparent;" />
+      </svg>
+    </div>
+  </section>
+  <!--<section class="abouts"></section>-->
   <!-- Footer -->
   <footer class="footer clearfix">
     <div class="footer_column">
@@ -218,6 +219,7 @@
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <script src="/bower_components/semantic/dist/semantic.js"></script>
+  <script src="/bower_components/swiper/dist/js/swiper.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:js scripts/main.js -->

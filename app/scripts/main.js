@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+
+  //initialize swiper when document ready  
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true
+  });
+
   // $('.loader').fadeOut(3000, function() {
   //     $("#corps").fadeIn(1000);
   // });
@@ -15,7 +23,7 @@ $(document).ready(function () {
 
   $(document).scroll(function () {
     if ($(document).scrollTop() > $('.menu').height()) {
-
+      // $('.menu').transition('flash');
       $('.menu').css({
         'display': 'none'
       });
